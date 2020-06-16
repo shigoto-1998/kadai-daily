@@ -14,17 +14,17 @@
 <br /><br />
 
 <label for="name">氏名</label><br />
-<input type="text" name="neme" value="${employee.name}" />
+<input type="text" name="name" value="${employee.name}" />
 <br /><br />
 
-<label for= "password">パスワード</label><br />
+<label for="password">パスワード</label><br />
 <input type="password" name="password" />
 <br /><br />
 
 <label for="admin_flag">権限</label><br />
 <select name="admin_flag">
-    <option value="0"<c:if test="${employee.admin_flag == 0}">selected</c:if>>一般</option>
-    <option value="1"<c:if test="${employee.admin_flag == 1}">selected</c:if>>管理者</option>
+    <option value="0"<c:if test="${employee.admin_flag == 0}"> selected</c:if>>一般</option>
+    <option value="1"<c:if test="${employee.admin_flag == 1}"> selected</c:if>>管理者</option>
 </select>
 <br /><br />
 
